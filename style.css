@@ -21,12 +21,15 @@
     padding: 0;
     box-sizing: border-box;
 }
-
-main{
+body {
+    background-color: var(--Light-grayish-blue); 
     font-family: 'Barlow Semi Condensed', sans-serif;
+}
+
+main{    
     display: flex;
-    gap: 30px;
-    background-color: var(--Light-grayish-blue);
+    gap: 30px;    
+    margin: 165px;
 }
 
 .first-div {
@@ -98,7 +101,16 @@ img {
     background-color: var(--Moderate-violet);
     width: 540px;
     height: 282px;
+    background-image: url(./images/bg-pattern-quotation.svg);
+    background-size: 102px 102px;
+    background-repeat: no-repeat;
+    background-position: 355px top;
+    
 }
+
+
+    
+
 
 .daniel .img {
     border: 1px solid var(--Very-darkblackish-blue);
@@ -162,6 +174,8 @@ img {
 .kira img {
     border: 1px solid var(--Light-gray);
 }
+
+
 .attribution { 
     font-size: 11px; 
     text-align: center; 
