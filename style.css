@@ -53,6 +53,7 @@ main{
 .user {
     padding: 22px 30px 30px;
     border-radius: 8px;
+    box-shadow: 5px 5px 10px 1px var(--Light-gray);
 }
 
 .card {
@@ -68,6 +69,7 @@ main{
     height: 30px;
     border-radius: 50%;
 }
+
 img {
     width: 100%;
     border-radius: 50%;    
@@ -106,11 +108,7 @@ img {
     background-repeat: no-repeat;
     background-position: 355px top;
     
-}
-
-
-    
-
+}  
 
 .daniel .img {
     border: 1px solid var(--Very-darkblackish-blue);
@@ -174,12 +172,41 @@ img {
 .kira img {
     border: 1px solid var(--Light-gray);
 }
-
-
 .attribution { 
-    font-size: 11px; 
+    font-size: 13px; 
     text-align: center; 
+    margin-bottom: 20px;
+    font-weight: 500;
 }
 .attribution a { 
     color: hsl(228, 45%, 44%); 
+    text-decoration: none;
+}
+
+@media only screen and (max-width: 600px) {
+    main {
+        margin: 71px 25px;
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+    }
+    .first-div--one,
+    .first-div--two {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    .user {
+        width: 325px;
+        height: 100%;
+        box-shadow: 5px 5px 10px 1px var(--Light-gray);
+    }
+
+    .daniel {
+        background-image: url(./images/bg-pattern-quotation.svg);
+        background-size: 102px 102px;
+        background-repeat: no-repeat;
+        background-position: 200px top;
+}
 }
