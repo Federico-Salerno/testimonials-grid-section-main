@@ -24,12 +24,14 @@
 body {
     background-color: var(--Light-grayish-blue); 
     font-family: 'Barlow Semi Condensed', sans-serif;
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
 }
 
 main{    
     display: flex;
     gap: 30px;    
-    margin: 165px;
 }
 
 .first-div {
